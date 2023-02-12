@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+    border-bottom: 1px solid rgb(223, 110, 129);
+}
+nav {
+    background-color: rgb(240, 194, 176);
+    padding: 2px;
+}
+nav .list1 {
+    font-size: 25px;
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+nav .list1 a:link {
+    text-decoration: none;
+    color: white;
+}
+nav .list1 a:visited {
+    color: lightcoral;
+}
+nav .list1 a:active {
+    color: black;
+}
+nav .list1 a:hover {
+    color: brown;
+}
+body {
+   background-color: antiquewhite;
+}
