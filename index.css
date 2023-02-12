@@ -57,3 +57,66 @@ nav .list1 a:hover {
 body {
     background-color: var(--Background-color);
 }
+
+
+@media only screen and (max-device-width: 480px) {
+    html {
+        --Background-color: rgb(250, 235, 215);
+        --nav-link: white;
+        --nav-visited: lightcoral;
+        --nav-active: black;
+        --nav-hover: brown;
+        font-size: 0.6rem;
+        margin: 0px;
+        padding: 0px;
+      }
+      .header {
+          border-bottom: 1px solid rgb(223, 110, 129);
+      }
+      .image1 {
+          margin-left: 0.5em;
+          margin-right: 0.5em;
+      }
+      
+      .Info > .p1 {
+          width: 110px;
+          line-height: 0.75em;
+          border: 1px dotted black;
+          border-radius: 0.75em;
+          padding: 0.76em;
+          margin-right: 25px;
+          float: right;
+          background-color: aqua;
+      }
+      .Info .p1 .span1 {
+          font-size: 12.5px;
+          font-weight: bold;
+      }
+      
+      nav {
+          background-color: rgb(240, 194, 176);
+          padding: 1px;
+      }
+      nav .list1 {
+          font-size: 12.5px;
+          list-style: none;
+          display: flex;
+          gap: 0.5em;
+      }
+      nav .list1 a:link {
+          text-decoration: none;
+          color: var(--nav-link);
+      }
+      nav .list1 a:visited {
+          color: var(--nav-visited);
+      }
+      nav .list1 a:active {
+          color: var(--nav-active);
+      }
+      nav .list1 a:hover {
+          color: var(--nav-hover);
+      }
+      body {
+        background-color: var(--Background-color);
+      }
+}
