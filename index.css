@@ -1,43 +1,52 @@
-body {
-    font-family:  Arial, Helvetica, sans-serif;
-    font: 1.5em;
-    background-color: lightgray;
-}
 :root {
     box-sizing: border-box;
 }
-*, ::before , ::after {
+*, ::before ::after {
     box-sizing: inherit;
 }
+.container {
+    display: flex;
+    overflow: auto;
+}
+body * + * {
+    margin-top: 1.5em;
+}
+body {
+    background-color: lightgray;
+}
 .header {
-    color: white;
-    padding: 5px 5px 5px 10px;
+    background-color: #2029a3;
+    color: #fff;
+    padding: 1em 1.5em;
     border-radius: 0.5em;
-    margin: 0px;
-    background-color: #210e68;
 }
-
-.details {
-    background-color: white;
-    padding: 5px 0px 5px 10px;
-    margin-top: 15px;
-    float: left;
+.main {
+    background-color: #fff;
+    padding: 1.5em 1.5em;
+    border-radius: 0.5em;
     width: 70%;
-    border-radius: 0.5em;
 }
-.aside {
-    float: left;
-    margin-top: 20px;
-    background-color: white;
+.buttons {
+    background-color: #fff;
     width: 30%;
+    padding: 1.5em;
+    margin-top: 0;
     border-radius: 0.5em;
-    padding: 10px;
-}
-.widget {
-    padding: 7px;
+    margin-left: 1.5em;
 }
 .button {
-    background-color: rgb(38, 38, 172);
-    color: white;
-    padding: 5px 50px 5px 50px;
+    padding: 1em 1.5em;
+    display: block;
+    border-radius: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #747cf5;
+    color: #fff;
+}
+.sponsor-link {
+    color: #0a0e4e;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
 }
